@@ -459,6 +459,14 @@ h1 .purple {
   font-size: 14px;
 }
 
+/* ASSIGNMENT SUBMISSION BUTTONS */
+.assignment-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 23px; }
+.assignment-action { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 15px 22px; border-radius: 12px; background: #ff9d38; color: #241629; font-weight: 800; font-size: 14px; text-decoration: none; transition: transform .2s, background .2s; }
+.assignment-action:hover, .assignment-action:focus-visible { background: #ffc16d; transform: translateY(-3px); }
+.assignment-action.poster { background: #fff; }
+.assignment-action.poster:hover, .assignment-action.poster:focus-visible { background: #ffe6ca; }
+@media (max-width: 560px) { .assignment-actions { flex-direction: column; } .assignment-action { width: 100%; } }
+
 /* NOTICES */
 
 .notice-heading {
@@ -969,14 +977,16 @@ footer p {
   <section class="announcement">
     <div class="announcement-content">
 
-      <div class="announcement-tag">✨ COMING SOON</div>
+      <div class="announcement-tag">✨ SUBMISSIONS OPEN</div>
 
-      <h2>Lights. Camera. Assignment! 🎬</h2>
+      <h2>Video &amp; Poster Assignments 🎬🎨</h2>
 
-      <p>
-        Submission for Video Assignment will be enabled soon!
-        Stay Connected for further updates from the MCA Department.
-      </p>
+      <p>Submit your video or poster assignment using the appropriate form below.</p>
+
+      <div class="assignment-actions">
+        <a class="assignment-action" href="https://forms.gle/x3DaiyLWQhgHWzn86" target="_blank" rel="noopener noreferrer">🎬 Video Submission ↗</a>
+        <a class="assignment-action poster" href="https://forms.gle/dL6YwwfDeYjJmFwg6" target="_blank" rel="noopener noreferrer">🎨 Poster Submission ↗</a>
+      </div>
 
     </div>
   </section>
